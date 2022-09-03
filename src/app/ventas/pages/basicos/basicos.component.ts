@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-basicos',
@@ -10,5 +10,6 @@ export class BasicosComponent {
   nombreUpper:string  ='LUIS ANGEL';
   nombreCompleto:string  ='LUIS angEl santOs';
 
+  fecha:Date = new Date();
 
 }
