@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-//PrimeNg
-import { ButtonModule } from 'primeng/button';
-import { CardModule } from 'primeng/card';
-
+import { AppRouterModule } from './app-router.module';
 
 import { AppComponent } from './app.component';
+import { SharedModule } from './shared/shared.module';
+import { VentasModule } from './ventas/ventas.module';
 
 
 
@@ -16,8 +14,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    ButtonModule,
-    CardModule
+    AppRouterModule,
+    SharedModule,
+    VentasModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

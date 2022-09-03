@@ -1,15 +1,2 @@
-<div class="text-layout">
-  <h1>{{nombre | titlecase}}</h1>
-</div>
-<button pButton 
-        class="p-button-raised p-button-rounded p-button-help"
-        icon="pi pi-check" 
-        iconPos="right"
-        (click)="mostrarNombre()" 
-        label="Cambiar nombre">
-</button>
-<hr>
-<p-card header="{{nombre | titlecase}}"
-        subheader="Desarrollador de Software JR">
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, ad ex. Laudantium quibusdam enim illum assumenda officia quis similique quas totam quisquam, eligendi impedit, perspiciatis rem? Error facere nostrum corporis.
-</p-card>
+<app-menu></app-menu>
+<router-outlet></router-outlet>
