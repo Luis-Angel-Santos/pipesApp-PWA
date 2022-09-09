@@ -11,6 +11,8 @@ import { VentasModule } from './ventas/ventas.module';
 import  LocalEs  from '@angular/common/locales/es-MX';
 import  LocalFr  from '@angular/common/locales/fr';
 import { registerLocaleData } from "@angular/common";
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 registerLocaleData(LocalEs);
 registerLocaleData(LocalFr);
 
@@ -24,6 +26,12 @@ registerLocaleData(LocalFr);
     AppRouterModule,
     SharedModule,
     VentasModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
 
   ],
   providers: [
