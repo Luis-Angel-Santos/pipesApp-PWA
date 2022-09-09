@@ -4,3 +4,5 @@ Practcando con Angular, esta vez manejenado los distintos pipes de Angular, más
 Ademas de manejar este mini proyecto como PWA
 
 ## Ver proyecto
+
+https://pipesapp-pwa.netlify.app/
